@@ -4,7 +4,7 @@
   "description": "Directory structure for a node application",
   "main": "app/index.js",
   "scripts": {
-    "test": "env-cmd -f ./config/envs/dev.env jest ./app/tests/* --runInBand",
+    "test": "env-cmd -f ./config/envs/dev.env jest ./app/tests/* --runInBand --verbose",
     "start:": "app/index.js",
     "dev-node": "env-cmd -f ./config/envs/dev.env node app/index.js",
     "dev": "env-cmd -f ./config/envs/dev.env nodemon app/index.js"

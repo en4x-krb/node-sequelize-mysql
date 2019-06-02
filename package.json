@@ -1,0 +1,44 @@
+{
+  "name": "node_app_structure",
+  "version": "1.0.0",
+  "description": "Directory structure for a node application",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "env-cmd -f ./config/envs/dev.env jest ./app/tests/* --runInBand",
+    "start:": "app/index.js",
+    "dev-node": "env-cmd -f ./config/envs/dev.env node app/index.js",
+    "dev": "env-cmd -f ./config/envs/dev.env nodemon app/index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "Ajay KRB",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.5",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.2",
+    "redis": "^2.8.0",
+    "sequelize": "^5.8.5",
+    "sequelize-cli": "^5.4.0",
+    "sharp": "^0.22.1",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "socket.io-redis": "^5.2.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^9.0.2",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  }
+}
